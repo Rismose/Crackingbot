@@ -41,7 +41,7 @@ module.exports = {
                     value: "Sends a report to staff to watch."
                 },
                 {
-                    name: "**!meme",
+                    name: "**!meme**",
                     value: "Gives you a random meme."
                 }
             ],
