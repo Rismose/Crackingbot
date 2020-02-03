@@ -39,12 +39,16 @@ module.exports = {
                 {
                     name: "**!report (@user) (reason)**",
                     value: "Sends a report to staff to watch."
+                },
+                {
+                    name: "**!ver**",
+                    value: "Shows the bot's version."
                 }
             ],
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v.1.2.0.1"
+                text: "v.1.2.1"
             }}
         });
                 

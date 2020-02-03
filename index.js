@@ -28,7 +28,7 @@ client.on("ready", () => {
     client.user.setPresence({
         status: "dnd",
         game: {
-            name: "(!help)",
+            name: "(!help) v.1.2.1",
             type: "WATCHING"
         }
     }); 
