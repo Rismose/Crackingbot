@@ -3,7 +3,7 @@ module.exports = {
         toFind = toFind.toLowerCase();
 
         let target = message.guild.members.get(toFind);
-
+        
         if (!target && message.mentions.members)
             target = message.mentions.members.first();
 
@@ -13,14 +13,14 @@ module.exports = {
                 member.user.tag.toLowerCase().includes(toFind)
             });
         }
-
-        if (!target)
+            
+        if (!target) 
             target = message.member;
-
+            
         return target;
     },
 
-    fortmatDate: function(date) {
-        return new Intl.DateTimeFormat(`en-US`).format(date);
+    formatDate: function(date) {
+        return new Intl.DateTimeFormat('en-US').format(date)
     }
 }
