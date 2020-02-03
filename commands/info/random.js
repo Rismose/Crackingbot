@@ -19,4 +19,3 @@ module.exports = {
             description: "Random Number 1 - 100",
                 }
             })}}
-    

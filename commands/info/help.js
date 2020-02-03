@@ -14,7 +14,7 @@ module.exports = {
                 description: "***The commands for the bot***",
                 fields: [{
                     name: "**!say (message)**",
-                    value: "Makes Dorito say want you want it to if you have the right permissions."
+                    value: "Makes Crackingbot say want you want it to if you have the right permissions."
                 },
                 {
                     name: "**!ping**",
