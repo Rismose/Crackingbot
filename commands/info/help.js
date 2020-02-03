@@ -44,7 +44,7 @@ module.exports = {
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "Ris is cool :D"
+                text: "v.1.2.2"
             }}
         });
                 
