@@ -13,14 +13,14 @@ module.exports = {
             description: "***About the bot***",
             fields: [{
                 name: "**Version**",
-                value: "1.0.15 Pre-Release."
+                value: "1.0.16 Pre-Release."
             },
             {
                 name: "**Creator**",
                 value: "Rismose#1887."
             },
             {
-                name: "**Pourpose**",
+                name: "**Purpose**",
                 value: "To show the judges I learnt JS again in less than 24h"
             }
             ],
