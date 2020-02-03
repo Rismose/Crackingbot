@@ -35,6 +35,10 @@ module.exports = {
                 {
                     name: "**!whois**",
                     value: "Shows information about the user."
+                },
+                {
+                    name: "**!report (@user) (reason)**",
+                    value: "Sends a report to staff to watch."
                 }
             ],
             timestamp: new Date(),
