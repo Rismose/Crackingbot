@@ -3,17 +3,16 @@ module.exports = {
     category: "moderation",
     description: "welcomes users",
     run: async (client, guildMemberAdd, guildMemberRemove, message, args, member) => {
-            const guild1 = member.guild;
-            if (!newUsers[guild1.id]) newUsers[guild1.id] = new Discord.Collection();
-            newUsers[guild1.id].set(member.id, member.user);
+            const guild = member.guild;
+            if (!newUsers[guild.id]) newUsers[guild.id] = new Discord.Collection();
+            newUsers[guild.id].set(member.id, member.user);
           
-            if (newUsers[guild1.id].size > 10) {
-              const userlist = newUsers[guild1.id].map(u => u.toString()).join(" ");
-              guild1.channels.find(channel => channel.name === "general").send("Welcome our new users!\n" + userlist);
-              newUsers[guild1.id].clear();
+            if (newUsers[guild.id].size > 10) {
+              const userlist = newUsers[guild.id].map(u => u.toString()).join(" ");
+              guild.channels.find(channel => channel.name === "general").send("Welcome our new users!\n" + userlist);
+              newUsers[guild.id].clear();
             }
-          
-            const guild1 = member.guild;
-            if (newUsers[guild1.id].has(member.id)) newUsers.delete(member.id);
+            
+            if (newUsers[guild.id].has(member.id)) newUsers.delete(member.id);
           }
 }
