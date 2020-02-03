@@ -13,7 +13,7 @@ module.exports = {
             description: "***About the bot***",
             fields: [{
                 name: "**Version**",
-                value: "1.2.2 Pre-Release."
+                value: "1.2.3 Pre-Release."
             },
             {
                 name: "**Creator**",
@@ -21,13 +21,13 @@ module.exports = {
             },
             {
                 name: "**Purpose**",
-                value: "To show the judges I learnt JS again in less than 24h"
+                value: "A project to relearn JavaScript"
             }
             ],
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v.1.2.2"
+                text: "v.1.2.3"
             }}
         });
                 
