@@ -29,9 +29,9 @@ module.exports = {
             **> Roles:** ${roles}`, true)
 
             .addField('User information:', stripIndents`**> ID:** ${member.user.id}
-            **> Username**: ${member.user.username}
-            **> Tag**: ${member.user.tag}
-            **> Created at**: ${created}`, true)
+            **> Username:** ${member.user.username}
+            **> Tag:** ${member.user.tag}
+            **> Created at:** ${created}`, true)
             
             .setTimestamp()
 

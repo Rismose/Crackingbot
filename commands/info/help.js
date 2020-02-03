@@ -31,6 +31,10 @@ module.exports = {
                 {
                     name: "**!botinfo (or) !binfo**",
                     value: "Shows information about the bot."
+                },
+                {
+                    name: "**!whois**",
+                    value: "Shows information about the user."
                 }
             ],
             timestamp: new Date(),

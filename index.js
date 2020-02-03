@@ -1,6 +1,8 @@
 const { Client, Collection } = require("discord.js");
 const { config } = require("dotenv");
 
+const prefix = "!";
+
 const client = new Client({
     disableEveryone: true
 })
@@ -33,8 +35,6 @@ client.on("ready", () => {
 })
 
 client.on("message", async message => {
-    const prefix = "!";
-
     if (message.author.bot) return;
     if (!message.guild) return;
     if (!message.content.startsWith(prefix)) return;
