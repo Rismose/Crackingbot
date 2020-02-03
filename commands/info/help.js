@@ -39,6 +39,10 @@ module.exports = {
                 {
                     name: "**!report (@user) (reason)**",
                     value: "Sends a report to staff to watch."
+                },
+                {
+                    name: "**!meme",
+                    value: "Gives you a random meme."
                 }
             ],
             timestamp: new Date(),
