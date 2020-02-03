@@ -39,10 +39,6 @@ module.exports = {
                 {
                     name: "**!report (@user) (reason)**",
                     value: "Sends a report to staff to watch."
-                },
-                {
-                    name: "**!ver**",
-                    value: "Shows the bot's version."
                 }
             ],
             timestamp: new Date(),
