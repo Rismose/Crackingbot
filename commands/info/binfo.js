@@ -17,7 +17,7 @@ module.exports = {
             },
             {
                 name: "**Creator**",
-                value: "Rismose#1887."
+                value: "Rismose#1887"
             },
             {
                 name: "**Purpose**",
