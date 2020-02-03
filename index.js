@@ -5,6 +5,8 @@ const client = new Client({
     disableEveryone: true
 })
 
+const newUsers = [];
+
 // Collections
 client.commands = new Collection();
 client.aliases = new Collection();
