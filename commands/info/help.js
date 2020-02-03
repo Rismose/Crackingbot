@@ -22,15 +22,15 @@ module.exports = {
                 },
                 {
                     name: "**!kick (user)**",
-                    value: "Kicks the user if the moderator has the right premissions"
+                    value: "Kicks the user if the moderator has the right premissions."
                 },
                 {
                     name: "**!random**",
                     value: "Displays a random number from 1 - 100"
                 },
                 {
-                    name: "~~!userinfo (user)~~",
-                    value: "Project Killed."
+                    name: "**!botinfo (or) !binfo**",
+                    value: "Shows information about the bot."
                 }
             ],
             timestamp: new Date(),
