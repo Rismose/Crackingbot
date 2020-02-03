@@ -13,7 +13,7 @@ module.exports = {
             description: "***About the bot***",
             fields: [{
                 name: "**Version**",
-                value: "1.0.7 Pre-Release."
+                value: "1.0.9 Pre-Release."
             },
             {
                 name: "**Creator**",
