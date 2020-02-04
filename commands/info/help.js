@@ -41,14 +41,14 @@ module.exports = {
                     value: "Sends a report to staff to watch."
                 },
                 {
-                    name: "**!meme**",
+                    name: "**!meme",
                     value: "Gives you a random meme."
                 }
             ],
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v.1.3.1 Pre-Release"
+                text: "v.1.3.0"
             }}
         });
                 
