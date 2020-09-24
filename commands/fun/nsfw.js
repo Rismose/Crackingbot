@@ -2,13 +2,13 @@ const { RichEmbed } = require("discord.js");
 const randomPuppy = require("random-puppy");
 
 module.exports = {
-    name: "wcgw",
+    name: "nsfw",
     category: "fun",
-    description: "Sends an epic wcgw post",
+    description: "Sends an epic nsfw post",
     run: async (client, message, args) => {
         // In this array, 
         // you can put the subreddits you want to grab WhatCouldGoWrong posts from
-        const subReddits = ["whatcouldgowrong"];
+        const subReddits = ["nsfw", "OnOff", "barelylegalteens", "girlsinyogapants", "gonewild", "leggings", "PetiteGoneWild", "YogaPants", "milfs", "milf", "best_nsfw_milf"];
         // Grab a random property from the array
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
 

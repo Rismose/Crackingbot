@@ -45,8 +45,8 @@ module.exports = {
                     value: "Gives you a random meme."
                 },
                 {
-                    name: "**!wcgw**",
-                    value: "Gives you a random WhatCouldGoWrong post."
+                    name: "**!nsfw**",
+                    value: "Gives you a random nsfw post."
                 }
             ],
             timestamp: new Date(),
