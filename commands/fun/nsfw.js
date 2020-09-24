@@ -8,7 +8,7 @@ module.exports = {
     run: async (client, message, args) => {
         // In this array, 
         // you can put the subreddits you want to grab WhatCouldGoWrong posts from
-        const subReddits = ["nsfw", "OnOff", "barelylegalteens", "girlsinyogapants", "gonewild", "leggings", "PetiteGoneWild", "YogaPants", "milfs", "milf", "best_nsfw_milf"];
+        const subReddits = ["nsfw", "onoff", "barelylegalteens", "girlsinyogapants", "gonewild", "leggings", "PetiteGoneWild", "YogaPants", "milfs", "milf", "best_nsfw_milf"];
         // Grab a random property from the array
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
 
