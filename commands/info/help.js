@@ -29,7 +29,7 @@ module.exports = {
                     value: "Displays a random number from 1 - 100"
                 },
                 {
-                    name: "**!botinfo (or) !binfo**",
+                    name: "**!botinfo**",
                     value: "Shows information about the bot."
                 },
                 {
@@ -43,12 +43,16 @@ module.exports = {
                 {
                     name: "**!meme**",
                     value: "Gives you a random meme."
+                },
+                {
+                    name: "**!wcgw**",
+                    value: "Gives you a random WhatCouldGoWrong post."
                 }
             ],
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v.1.1"
+                text: "v.1.2"
             }}
         });
                 

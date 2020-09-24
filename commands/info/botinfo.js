@@ -1,5 +1,5 @@
 module.exports = {
-    name: "botinfo",
+    name: "binfo",
     category: "info",
     description: "info about the bot",
     run: async (client, message, args) => {
@@ -13,7 +13,7 @@ module.exports = {
             description: "***About the bot***",
             fields: [{
                 name: "**Version**",
-                value: "1.1"
+                value: "v.1.2"
             },
             {
                 name: "**Creator**",
@@ -27,7 +27,7 @@ module.exports = {
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v.1.1"
+                text: "v.1.2"
             }}
         });
                 
