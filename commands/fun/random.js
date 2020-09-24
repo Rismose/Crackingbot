@@ -7,6 +7,7 @@ function getRandomInt(min, max) {
 module.exports = {
     name: "random",
     category: "fun",
+    aliases: ["r", "number"],
     description: "random number",
     run: async (client, message, args) => {
         const msg = await message.channel.send({embed: {
@@ -15,7 +16,7 @@ module.exports = {
                 name: client.user.username,
                 icon_url: client.user.avatarURL
             },
-            title: "***The number is " + getRandomInt(1, 100) + "***",
+            title: "***" + getRandomInt(1, 100) + "***",
             description: "Random Number 1 - 100",
                 }
             })}}

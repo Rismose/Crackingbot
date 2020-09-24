@@ -25,11 +25,11 @@ module.exports = {
                     value: "Kicks the user if the moderator has the right premissions."
                 },
                 {
-                    name: "**!random**",
+                    name: "**!random (or) !random (or) !number**",
                     value: "Displays a random number from 1 - 100"
                 },
                 {
-                    name: "**!botinfo**",
+                    name: "**!botinfo (or) !binfo (or) infobot**",
                     value: "Shows information about the bot."
                 },
                 {
