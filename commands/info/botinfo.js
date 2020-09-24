@@ -1,6 +1,7 @@
 module.exports = {
     name: "binfo",
     category: "info",
+    aliases: ["botinfo", "infobot"],
     description: "info about the bot",
     run: async (client, message, args) => {
         const msg = await message.channel.send({embed: {
