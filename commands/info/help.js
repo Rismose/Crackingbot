@@ -44,15 +44,11 @@ module.exports = {
                     name: "**!meme**",
                     value: "Gives you a random meme."
                 },
-                {
-                    name: "**!nsfw**",
-                    value: "Gives you a random nsfw post."
-                }
             ],
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v.1.2"
+                text: "v.1.3"
             }}
         });
                 
