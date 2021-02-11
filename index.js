@@ -22,28 +22,34 @@ config({
     require(`./handlers/${handler}`)(client);
 });
 
-let status = 1;
 
 client.on("ready", () => {
-    console.log("Ready!");
     setInterval(()=>statusSwitch(), 7500)
+    console.log("Ready!");
 });
-
+  
+let status = 1;
 function statusSwitch() {
-    if(status==1) {
-            status = 2;
-            client.status("dnd", {
-                    name: `${prefix}help | ${process.env.version}`,
-                    type: 2
-             });
-    } else if (status==2) {
-            status = 1;
-            client.Status("dnd", {
-                    name: client.guilds.size+" servers",
-                    type: 3
-             });
-    }
-}
+if(status==1) {
+    status = 2;
+    client.user.setPresence({
+        status: 'dnd',
+        activity: {
+            name: `${prefix}help | ${process.env.version}`,
+                type: "LISTENING"
+            }
+        });
+} else if (status==2) {
+    status = 1;
+        client.user.setPresence({
+            status: 'dnd',
+            activity: {
+                name: client.guilds.cache.size+ " guilds",
+                type: "WATCHING"
+      }
+     });
+  }
+  }
 
 
 client.on("message", async message => {

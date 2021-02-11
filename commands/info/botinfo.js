@@ -14,7 +14,7 @@ module.exports = {
             description: "***About the bot***",
             fields: [{
                 name: "**Version**",
-                value: "v.1.4"
+                value: `${process.env.version}`
             },
             {
                 name: "**Creator**",
@@ -28,7 +28,7 @@ module.exports = {
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v1.4"
+                text: `${process.env.version}`
             }}
         });
                 

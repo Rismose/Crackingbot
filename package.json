@@ -9,8 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "12": "^1.0.2",
     "ascii-table": "0.0.9",
-    "discord.js": "^11.6.4",
+    "discord.js": "^12.5.1",
     "discord.js-commando": "^0.10.0",
     "dotenv": "^8.2.0",
     "random-puppy": "^1.1.0",
