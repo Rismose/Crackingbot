@@ -14,7 +14,7 @@
     "discord.js": "^12.5.1",
     "discord.js-commando": "^0.12.2",
     "dotenv": "^8.2.0",
-    "random-puppy": "^1.1.0",
+    "got": "^11.8.1",
     "save": "^2.4.0"
   }
 }
