@@ -28,7 +28,7 @@ module.exports = {
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: `${process.env.version}`
+                text: "v1.4"
             }}
         });
                 

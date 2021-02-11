@@ -32,13 +32,13 @@ client.on("ready", () => {
 function statusSwitch() {
     if(status==1) {
             status = 2;
-            client.editStatus("dnd", {
+            client.status("dnd", {
                     name: `${prefix}help | ${process.env.version}`,
                     type: 2
              });
     } else if (status==2) {
             status = 1;
-            client.editStatus("dnd", {
+            client.Status("dnd", {
                     name: client.guilds.size+" servers",
                     type: 3
              });
