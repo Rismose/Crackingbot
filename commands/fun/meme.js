@@ -8,7 +8,7 @@ module.exports = {
     run: async (client, message, args) => {
         // In this array, 
         // you can put the subreddits you want to grab memes from
-        const subReddits = ["dankmeme", "meme", "me_irl", "memes", "boomermeme", "memeeconomy", "BikiniBottomTwitter", "Memes_Of_The_Dank"];
+        const subReddits = ["dankmeme", "meme", "me_irl", "memes", "boomermeme", "memeeconomy", "BikiniBottomTwitter", "Memes_Of_The_Dank", "dankmemes"];
         
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
     
