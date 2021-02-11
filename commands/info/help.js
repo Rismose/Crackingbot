@@ -1,7 +1,14 @@
+const { config } = require("dotenv");
+
+config({
+path: __dirname + "/.env"
+});
 module.exports = {
     name: "help",
     category: "info",
     description: "Shows help",
+
+
     run: async (client, message, args) => {
       {
             message.channel.send({embed: {
@@ -48,7 +55,7 @@ module.exports = {
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v.1.3"
+                text: `${process.env.version}`
             }}
         });
                 

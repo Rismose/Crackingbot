@@ -1,3 +1,9 @@
+const { config } = require("dotenv");
+
+config({
+path: __dirname + "/.env"
+});
+
 module.exports = {
     name: "binfo",
     category: "info",
@@ -14,7 +20,7 @@ module.exports = {
             description: "***About the bot***",
             fields: [{
                 name: "**Version**",
-                value: "v.1.3"
+                value: "v.1.4"
             },
             {
                 name: "**Creator**",
@@ -22,13 +28,13 @@ module.exports = {
             },
             {
                 name: "**Purpose**",
-                value: "A project to relearn JavaScript"
+                value: "To watch over the naughty kids in Crackingcord"
             }
             ],
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "v.1.3"
+                text: `${process.env.version}`
             }}
         });
                 

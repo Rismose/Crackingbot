@@ -22,17 +22,29 @@ config({
     require(`./handlers/${handler}`)(client);
 });
 
-client.on("ready", () => {
-    console.log(`Hi, ${client.user.username} is now online!`);
+let status = 1;
 
-    client.user.setPresence({
-        status: "dnd",
-        game: {
-            name: "(!help) v.1.3",
-            type: "WATCHING"
-        }
-    }); 
-})
+client.on("ready", () => {
+    console.log("Ready!");
+    setInterval(()=>statusSwitch(), 7500)
+});
+
+function statusSwitch() {
+    if(status==1) {
+            status = 2;
+            client.editStatus("dnd", {
+                    name: `${prefix}help | ${process.env.version}`,
+                    type: 2
+             });
+    } else if (status==2) {
+            status = 1;
+            client.editStatus("dnd", {
+                    name: client.guilds.size+" servers",
+                    type: 3
+             });
+    }
+}
+
 
 client.on("message", async message => {
     if (message.author.bot) return;
@@ -57,5 +69,5 @@ client.on("message", async message => {
         command.run(client, message, args);
 });
 
-client.login(process.env.TOKEN); //just bcs
+client.login(process.env.token); //just bcs
 
