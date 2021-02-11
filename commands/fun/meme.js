@@ -8,18 +8,22 @@ module.exports = {
     run: async (client, message, args) => {
         // In this array, 
         // you can put the subreddits you want to grab memes from
-        const subReddits = ["dankmeme", "meme", "me_irl", "memeeconomy", "bikinibottomtwitter", "memes_of_the_dank", "memes"];
-        // Grab a random property from the array
+        const subReddits = ["dankmeme", "meme", "me_irl", "memes", "boomermeme", "memeeconomy"];
+        
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
-
-        // Get a random image from the subreddit page
-        const img = await randomPuppy(random);
-        const embed = new MessageEmbed()
-            .setColor("RANDOM")
-            .setImage(img)
-            .setTitle(`From /r/${random}`)
-            .setURL(`https://reddit.com/r/${random}`);
-
-        message.channel.send(embed);
-    }
-}
+    
+        const embed = new MessageEmbed();
+        got(`https://www.reddit.com/r/${random}/random/.json`).then(response => {
+            let content = JSON.parse(response.body);
+            let permalink = content[0].data.children[0].data.permalink;
+            let memeUrl = `https://reddit.com${permalink}`;
+            let memeImage = content[0].data.children[0].data.url;
+            let memeTitle = content[0].data.children[0].data.title;
+            let memeUpvotes = content[0].data.children[0].data.ups;
+            let memeDownvotes = content[0].data.children[0].data.downs;
+            embed.addField(`${memeTitle}`, `[View post](${memeUrl})`);
+            embed.setImage(memeImage);
+            embed.setFooter(`👍 ${memeUpvotes} 👎 ${memeDownvotes} | Totally not skidded from Atex`);
+            message.channel.send(embed)
+            console.log(memeUrl)
+        })}}
