@@ -1,0 +1,2 @@
+# Crackingbot
+Crackingcord discordbot
