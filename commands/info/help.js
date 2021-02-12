@@ -46,6 +46,10 @@ module.exports = {
                     name: "**!meme**",
                     value: "Gives you a random meme."
                 },
+                {
+                    name: "**!invite**",
+                    value: "Invites the bot."
+                },
             ],
             timestamp: new Date(),
             footer: {
